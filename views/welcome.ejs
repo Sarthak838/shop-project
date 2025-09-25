@@ -1,0 +1,109 @@
+<!-- google font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style type="text/css">
+    .container{
+        background-color: whitesmoke;
+     }
+    .card{
+        background-color: white;
+        border-radius: 20px;
+        transition: all 1s ease-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .card h1{
+        color: #c850c0;
+        font-family: 'Roboto', Arial, sans-serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .card p{
+        color: #c850c0;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 1.8rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .card a{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-family: 'Roboto', Arial, sans-serif;
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+        padding-top:1rem;
+        padding-bottom: 1rem; 
+    }
+    .btn1{
+        background: linear-gradient(-135deg,#c850c0 , #4185d0);
+        width: 60%;
+        margin-top: 70px;
+
+        /* transition: all 1s ease-in-out; */
+    }
+    .btn1:hover{
+        background: linear-gradient(-135deg,#ad27a4 , #1b5da4);
+    }
+    .btn1:active{
+        transform: translateY(4px);
+    }
+    .btn2{
+        background: linear-gradient(-135deg,#c850c0 , #4185d0);
+        width: 60%;
+        margin-bottom: 30px;
+
+        /* transition: all 1s ease-in-out; */
+    }
+    .btn2:hover{
+        background: linear-gradient(-135deg,#ad27a4 , #1b5da4);
+    }
+    .btn2:active{
+        transform: translateY(4px);
+    }
+    .btn5{
+    background: linear-gradient(-135deg,#c850c0 , #4185d0);
+    color: white;
+    position: absolute;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    right: 25px;
+    top: 25px;
+    border-radius: 8px;
+    border: none;
+    /* transition: all 0.7s ease-in-out; */
+    }
+    .btn5:hover{
+        text-decoration: none;
+        background: linear-gradient(-135deg,#ad27a4 , #1b5da4);
+        color: white;;
+        
+    }
+    .btn5:active{
+        background-color: #EB5757;
+        /* box-shadow: 0 5px #666; */
+        transform: translateY(4px);
+    }
+</style>
+
+<title>Create Account or Login</title>
+<body class="container" >
+    <a href="/" class="btn5">Home Page</a>
+    <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body text-center">
+                <p>Create an Account or Login</p>
+                <h1><i class="fas fa-feather-alt fa-3x"></i></h1>
+                <a href="/users/register" class="btn1">
+                    Register
+                </a>
+                <a href="/users/login" class="btn2 ">Login</a>
+            </div>
+        </div>
+    </div>
+</body>

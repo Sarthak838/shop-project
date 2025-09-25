@@ -1,0 +1,203 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style type="text/css">
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        height: 100vh;
+    }
+    .container{
+       font-family:'Roboto',Arial;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+    }
+
+    .card{
+        padding: 0;
+        height: 550px;
+        width: 450px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 1px;
+        position: relative;
+    }
+
+    .login-head{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+    }
+
+    .login-head::before{
+        content: "";
+        position: absolute;
+        height: 120px;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        background: linear-gradient(-135deg,#c850c0 , #4185d0);
+    }
+
+    .login-head .form-title{
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    .form-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+
+    .form-group{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .form-control{
+        width: 80%;
+        height: 100%;
+        border-radius: 40px;
+        border: 2px solid lightgrey;
+        font-size: 16px;
+        box-shadow: none;
+        padding-left: 20px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .form-control:focus {
+        outline: none;          
+        border: 2px solid rgb(183, 0, 255);
+        box-shadow: none;   
+    }
+
+    .form-control:hover{
+        border: 2px solid rgb(183, 0, 255);
+    }
+
+    .form-group label{
+        position: absolute;
+        margin-left: 20px;
+        top: 50%;
+        left: 10%;
+        color:black;
+        background-color: white;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: all 0.15s ease;
+    }
+
+    .form-group input:focus ~label{
+        top: 0;
+        transform: translateY(-50%);
+    }
+
+    img{
+        widows: 100px;
+        height: 100px;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    .btn{
+        width: 80%;
+        height: 60px;
+        margin-top: 20px;
+        background: linear-gradient(-135deg,#c850c0 , #4185d0);
+        color: white;
+        border: 0;
+        border-radius: 40px;
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background: linear-gradient(-135deg,#ad27a4 , #1b5da4);
+    }
+    .btn:active{
+        transform: translateY(4px);
+    }
+    .btn1{
+    background: linear-gradient(-135deg,#c850c0 , #4185d0);
+    color: white;
+    position: absolute;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    right: 25px;
+    top: 25px;
+    border-radius: 8px;
+    border: none;
+    /* transition: all 0.7s ease-in-out; */
+    }
+    .btn1:hover{
+        text-decoration: none;
+        background: linear-gradient(-135deg,#ad27a4 , #1b5da4);
+        color: white;
+    }
+    .btn1:active{
+        background: linear-gradient(-135deg,#ad27a4 , #1b5da4);
+        /* box-shadow: 0 5px #666; */
+        transform: translateY(4px);
+    }
+
+    .lead{
+        color: black;
+    }
+</style>
+
+<title>Login Page</title>
+<body>
+    <div class="container">
+        <a href="/" class="btn1">Home Page</a>
+   
+        <div class="card card-body">
+            <div class="login-head">
+                <span class="form-title">Login Form</span>
+            </div>
+            <form class="form-section" action="/users/login" method="POST">
+                <div class="form-group">
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email" 
+                        class="form-control"/>
+                    <label>Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="password"
+                        id="password"
+                        name="password" 
+                        class="form-control"/>
+                    <label>Password</label>
+                </div>
+                <button class="btn btn-block">Login</button>
+                <p class="lead mt-4">
+                    No Account? 
+                    <a href="/users/register">Register</a>
+                </p>
+            </form>
+                
+        </div>
+    </div>
+</body>
