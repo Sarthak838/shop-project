@@ -1,7 +1,6 @@
 /* top section */
 body{
     background: url("/momos_img/momosshop.jpg")center/cover fixed no-repeat;
-    padding-top: 80px;
 
 }
 .info{
@@ -330,24 +329,48 @@ nav .navbar-brand{
 .bg-image{
     background: url('/momos_img/aboutus.jpg')center/cover fixed no-repeat;
 }
+
+.about .row{
+    margin: 0;
+    align-items: center;
+}
 #about .text{
     font-family: 'Roboto',Arial;
     color: white;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 #about .container{
-    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 #about .sentence{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    margin-bottom: 30px;
+}
+
+.row .col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
  .about-pictures{
     position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
  .about-image{
     position: absolute;
-    width: 200px;
-    margin-bottom: 2rem;
+    width: 150px;
+    max-width: 20%;
+    height: auto;
     transition: all 1s ease;
     opacity: 0.9;
 }
@@ -372,33 +395,33 @@ nav .navbar-brand{
 /* top-right */
 .img-4{
     left: 60%;
-    top: 60%;
+    top: 40%;
     z-index: 20;
 }
 /* bottom-left */
 .img-5{
     left: 35%;
-    top: 65%;
+    top: 45%;
     z-index: 10;
 }
 .img-6{
     left: 13%;
-    top: 70%;
+    top: 40%;
     z-index: 0;
 }
 .img-7{
     left: 60%;
-    top: 120%;
+    top: 70%;
     z-index: 20;
 }
 .img-8{
     left: 35%;
-    top: 125%;
+    top: 75%;
     z-index: 10;
 }
 .img-9{
     left: 13%;
-    top: 130%;
+    top: 80%;
     z-index: 9;
 }
 
