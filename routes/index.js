@@ -3,6 +3,7 @@ const router = express.Router();
 const {ensureAuthenticated} = require('../config/auth')
 
 // Welcome Page
+router.get('/', (req, res) => res.render('welcome'));  // <--- root route
 router.get('/account', (req, res) => res.render('welcome'))
 
 
