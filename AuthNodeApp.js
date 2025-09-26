@@ -15,9 +15,6 @@ console.log('Loaded MONGODB_URI:', process.env.MONGODB_URI);
 // Passport Config
 require('./config/passport')(passport);
 
-// Mongo DataBase Config
-const database = require('./config/keys').MongoURI;
-
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, { dbName: 'ecommerce' })
