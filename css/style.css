@@ -488,15 +488,22 @@ nav .navbar-brand{
 /* ================================================================= */
 /* team member */
 #team .container{
-    margin-top: 180px;
+    margin-top: 140px;
     font-family: 'Roboto',Arial;
+}
+
+#team .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #team .card{
     border-radius: 20px;
+    width: 300px;
 }
 #team .card-img-top{
     border-radius: 20px;
-    height: 300px;
+    height: 250px;
 }
 /* .team-icons a{
     color: #3b5998;
