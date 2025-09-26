@@ -25,6 +25,7 @@ mongoose.connect(process.env.MONGODB_URI, { dbName: 'ecommerce' })
 // EJS
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 app.use('/css', express.static('css')) // upload CSS file
 app.use('/momos_img', express.static(path.join(__dirname, 'momos_img'))); // upload Images file
 app.use('/js', express.static('js')); // upload javaScript file
