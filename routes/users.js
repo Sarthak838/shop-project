@@ -8,12 +8,8 @@ const passport = require('passport')
 const User = require('../model/User');
 
 // Login Page
-//router.get('/login', (req, res) => res.render('login'));
+router.get('/login', (req, res) => res.render('login'));
 
-// Login Page
-router.get('/login', (req, res) => {
-  res.render('login');   // this will load views/login.ejs
-});
 
 // Register Page
 router.get('/register', (req, res) => res.render('register'));
