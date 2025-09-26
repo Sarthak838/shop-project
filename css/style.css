@@ -539,6 +539,7 @@ nav .navbar-brand{
     height: 100vh;
 }
 .contact-us-card{
+  margin-top: 90px;  
   height: 500px;
   width: 1200px;
   display: flex;
@@ -603,7 +604,6 @@ nav .navbar-brand{
 }
 
 .contact-us-card .right-section{
-  
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -696,19 +696,6 @@ nav .navbar-brand{
 
 .send-button:hover{
   background-color: #9a37fd;
-}
-
-.send-button-container .button-hover{
-  background-color: rgb(40, 40, 40);
-  color: white;
-  position: absolute;
-  bottom: -40px;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.15s;
-  padding: 5px;
-  border-radius: 10px;
- 
 }
 
 .send-button-container:hover .button-hover{
