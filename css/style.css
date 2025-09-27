@@ -46,7 +46,6 @@ nav .navbar-brand{
 }
 .nav-link{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
@@ -60,7 +59,11 @@ nav .navbar-brand{
     color: lightblue;
 }
 
-.form-inline .btn{
+.nav-item .btn{
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(-135deg,#c850c0 , #4185d0);
     color: white;
     font-size: 1.3rem;
@@ -69,9 +72,8 @@ nav .navbar-brand{
     border-radius: 15px;
     margin-left: 1.5rem;
     transition: all 0.5 ease;
-   
 }
-.form-inline .btn:hover{
+.nav-item .btn:hover{
     background: linear-gradient(-135deg,#ad27a4 , #1b5da4);
     color: white;
 }
