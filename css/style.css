@@ -32,7 +32,7 @@ nav{
 }
 
 nav .navbar-brand{
-    font-size: 45px;
+    font-size: 60px;
     font-family: 'Roboto', Arial;
     color: white;
     font-weight: bold;
@@ -785,8 +785,10 @@ nav .navbar-brand{
   .all-inputs .message-input {
     font-size: 16px;
     height: 50px;
-    
-    
+  }
+
+  nav .navbar-brand{
+    font-size: 30px;
   }
 
 }
