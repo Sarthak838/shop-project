@@ -32,7 +32,7 @@ nav{
 }
 
 nav .navbar-brand{
-    font-size: 4.0rem;
+    font-size: 45px;
     font-family: 'Roboto', Arial;
     color: white;
     font-weight: bold;
@@ -82,9 +82,10 @@ nav .navbar-brand{
 /* humbegar menu button */
 .toggler-btn{
     /* border: 2px solid #d3325f; */
-    padding: 5px;
+    padding: 3px;
     transition: all 2s ease;
 }
+
 .bar{
     width: 40px;
     height: 5px;
